@@ -9,9 +9,9 @@
 #import "ViewController.h"
 #import <Masonry/Masonry.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
-//#import <ReactiveCocoa/RACEXTScope.h>
-#import "LxDBAnything.h"
 #import <IQKeyboardManager/IQKeyboardManager.h>
+#import "LxDBAnything.h"
+#import "UseViewController.h"
 @interface ViewController ()
 @property (strong, nonatomic) NSString *valueA;
 @property (strong, nonatomic) NSString *valueB;
@@ -73,6 +73,13 @@
     //顺序合并      ab: a->b=>
 //    [self concat];
 }
+
+- (IBAction)_actionNextVC:(id)sender {
+    UseViewController * view = [[UseViewController alloc]init];
+    [self.navigationController pushViewController:view animated:YES];
+
+}
+
 
 - (void)banding{
     RACChannelTerminal *channelA = RACChannelTo(self, valueA);

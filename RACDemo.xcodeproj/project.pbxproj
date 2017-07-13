@@ -13,6 +13,8 @@
 		1BDE93B51F17175C001663BC /* IQKeyboardManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BDE93B11F17167E001663BC /* IQKeyboardManager.framework */; };
 		1BDE93B61F17175C001663BC /* IQKeyboardManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1BDE93B11F17167E001663BC /* IQKeyboardManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1BDE93B81F17175F001663BC /* Masonry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1BDE93B31F171756001663BC /* Masonry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1BDE93BC1F171C04001663BC /* UseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDE93BA1F171C04001663BC /* UseViewController.m */; };
+		1BDE93BD1F171C04001663BC /* UseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BDE93BB1F171C04001663BC /* UseViewController.xib */; };
 		452736981C27DF5800F6E742 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 452736971C27DF5800F6E742 /* main.m */; };
 		4527369B1C27DF5800F6E742 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4527369A1C27DF5800F6E742 /* AppDelegate.m */; };
 		4527369E1C27DF5800F6E742 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4527369D1C27DF5800F6E742 /* ViewController.m */; };
@@ -60,6 +62,9 @@
 		1BDE93AC1F17165B001663BC /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
 		1BDE93B11F17167E001663BC /* IQKeyboardManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IQKeyboardManager.framework; sourceTree = "<group>"; };
 		1BDE93B31F171756001663BC /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Masonry.framework; sourceTree = "<group>"; };
+		1BDE93B91F171C04001663BC /* UseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UseViewController.h; sourceTree = "<group>"; };
+		1BDE93BA1F171C04001663BC /* UseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UseViewController.m; sourceTree = "<group>"; };
+		1BDE93BB1F171C04001663BC /* UseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UseViewController.xib; sourceTree = "<group>"; };
 		452736931C27DF5800F6E742 /* RACDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		452736971C27DF5800F6E742 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		452736991C27DF5800F6E742 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -140,6 +145,9 @@
 				4527369A1C27DF5800F6E742 /* AppDelegate.m */,
 				4527369C1C27DF5800F6E742 /* ViewController.h */,
 				4527369D1C27DF5800F6E742 /* ViewController.m */,
+				1BDE93B91F171C04001663BC /* UseViewController.h */,
+				1BDE93BA1F171C04001663BC /* UseViewController.m */,
+				1BDE93BB1F171C04001663BC /* UseViewController.xib */,
 				4527369F1C27DF5800F6E742 /* Main.storyboard */,
 				452736A21C27DF5800F6E742 /* Assets.xcassets */,
 				452736A41C27DF5800F6E742 /* LaunchScreen.storyboard */,
@@ -289,6 +297,7 @@
 			files = (
 				452736A61C27DF5800F6E742 /* LaunchScreen.storyboard in Resources */,
 				452736A31C27DF5800F6E742 /* Assets.xcassets in Resources */,
+				1BDE93BD1F171C04001663BC /* UseViewController.xib in Resources */,
 				452736A11C27DF5800F6E742 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +325,7 @@
 			files = (
 				4527369E1C27DF5800F6E742 /* ViewController.m in Sources */,
 				4527369B1C27DF5800F6E742 /* AppDelegate.m in Sources */,
+				1BDE93BC1F171C04001663BC /* UseViewController.m in Sources */,
 				452736981C27DF5800F6E742 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
