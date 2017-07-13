@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		394D2876B7D267DECC17AF35 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9813DAF7AAD4F1736B1365 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1BDE93AD1F17165B001663BC /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BDE93AC1F17165B001663BC /* ReactiveCocoa.framework */; };
+		1BDE93AF1F171662001663BC /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1BDE93AC1F17165B001663BC /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1BDE93B41F171756001663BC /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BDE93B31F171756001663BC /* Masonry.framework */; };
+		1BDE93B51F17175C001663BC /* IQKeyboardManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BDE93B11F17167E001663BC /* IQKeyboardManager.framework */; };
+		1BDE93B61F17175C001663BC /* IQKeyboardManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1BDE93B11F17167E001663BC /* IQKeyboardManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1BDE93B81F17175F001663BC /* Masonry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1BDE93B31F171756001663BC /* Masonry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		452736981C27DF5800F6E742 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 452736971C27DF5800F6E742 /* main.m */; };
 		4527369B1C27DF5800F6E742 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4527369A1C27DF5800F6E742 /* AppDelegate.m */; };
 		4527369E1C27DF5800F6E742 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4527369D1C27DF5800F6E742 /* ViewController.m */; };
@@ -35,8 +40,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1BDE93B01F171662001663BC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1BDE93AF1F171662001663BC /* ReactiveCocoa.framework in Embed Frameworks */,
+				1BDE93B61F17175C001663BC /* IQKeyboardManager.framework in Embed Frameworks */,
+				1BDE93B81F17175F001663BC /* Masonry.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		02E783E50FA23C7744B57C5F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		1BDE93AC1F17165B001663BC /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
+		1BDE93B11F17167E001663BC /* IQKeyboardManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IQKeyboardManager.framework; sourceTree = "<group>"; };
+		1BDE93B31F171756001663BC /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Masonry.framework; sourceTree = "<group>"; };
 		452736931C27DF5800F6E742 /* RACDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		452736971C27DF5800F6E742 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		452736991C27DF5800F6E742 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,7 +77,6 @@
 		452736BB1C27DF5800F6E742 /* RACDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACDemoUITests.m; sourceTree = "<group>"; };
 		452736BD1C27DF5800F6E742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4581B4E71C2A427F0052B8EE /* LxDBAnything.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LxDBAnything.h; sourceTree = "<group>"; };
-		742C6144B39746ED32ECE0BA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8E9813DAF7AAD4F1736B1365 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -63,7 +85,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				394D2876B7D267DECC17AF35 /* Pods.framework in Frameworks */,
+				1BDE93AD1F17165B001663BC /* ReactiveCocoa.framework in Frameworks */,
+				1BDE93B51F17175C001663BC /* IQKeyboardManager.framework in Frameworks */,
+				1BDE93B41F171756001663BC /* Masonry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,23 +108,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		214D1A44D331DADCEAD740E2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				02E783E50FA23C7744B57C5F /* Pods.debug.xcconfig */,
-				742C6144B39746ED32ECE0BA /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		4527368A1C27DF5800F6E742 = {
 			isa = PBXGroup;
 			children = (
+				1BDE93B31F171756001663BC /* Masonry.framework */,
+				1BDE93B11F17167E001663BC /* IQKeyboardManager.framework */,
+				1BDE93AC1F17165B001663BC /* ReactiveCocoa.framework */,
 				452736951C27DF5800F6E742 /* RACDemo */,
 				452736AF1C27DF5800F6E742 /* RACDemoTests */,
 				452736BA1C27DF5800F6E742 /* RACDemoUITests */,
 				452736941C27DF5800F6E742 /* Products */,
-				214D1A44D331DADCEAD740E2 /* Pods */,
 				6602078D1314A8BC5ECFB412 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -173,12 +190,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 452736C01C27DF5800F6E742 /* Build configuration list for PBXNativeTarget "RACDemo" */;
 			buildPhases = (
-				B2B512FFE0E978BD29511E41 /* Check Pods Manifest.lock */,
 				4527368F1C27DF5800F6E742 /* Sources */,
 				452736901C27DF5800F6E742 /* Frameworks */,
 				452736911C27DF5800F6E742 /* Resources */,
-				34AFE9F4A40B0E9CE2CF7A34 /* Embed Pods Frameworks */,
-				81E2C8FD4E6ED299172551A0 /* Copy Pods Resources */,
+				1BDE93B01F171662001663BC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -293,54 +308,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		34AFE9F4A40B0E9CE2CF7A34 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		81E2C8FD4E6ED299172551A0 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B2B512FFE0E978BD29511E41 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4527368F1C27DF5800F6E742 /* Sources */ = {
@@ -488,9 +455,12 @@
 		};
 		452736C11C27DF5800F6E742 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02E783E50FA23C7744B57C5F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RACDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -501,9 +471,12 @@
 		};
 		452736C21C27DF5800F6E742 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 742C6144B39746ED32ECE0BA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RACDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
